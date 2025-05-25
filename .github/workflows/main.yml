@@ -1,0 +1,22 @@
+name: My Email Action
+
+on:
+  push:
+    branches:
+      - main # This will trigger the action on pushes to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 22f1001592@ds.study.iitm.ac.in
+
+        run: |
+          echo "This step runs and includes my email address in its name."
+          echo "Current time: $(date)"
+
+      - name: Another step
+        run: echo "This is another step in the workflow."
